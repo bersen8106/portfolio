@@ -1,0 +1,104 @@
+@import "../node_modules/normalize.css/normalize";
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+a {
+    color: #2AF108;
+}
+
+
+/* roboto-regular - latin */
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto'), local('Roboto-Regular'), url('../fonts/roboto-v20-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/roboto-v20-latin-regular.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+
+/* roboto-700 - latin */
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Roboto Bold'), local('Roboto-Bold'), url('../fonts/roboto-v20-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/roboto-v20-latin-700.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+body {
+    background-image: url(../img/keyboard.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #2AF108;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    background-position: center center;
+    width: 90%;
+    max-width: 1160px;
+    margin: auto;
+}
+
+.header-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 15px 0 15px;
+    margin-bottom: 100px;
+}
+
+.nav {
+    display: flex;
+    padding: 0;
+}
+
+.nav-item {
+    list-style: none;
+}
+
+.nav-link {
+    text-decoration: none;
+    /* color: #2AF108; */
+    margin-left: 125px;
+    font-size: 24px;
+}
+
+.tagline-block {
+    /* display: flex;
+    flex-wrap: wrap-reverse; */
+    position: relative;
+}
+
+.tagline-1 {
+    max-width: 357px;
+    font-size: 60px;
+    line-height: 70px;
+    background: #292929;
+    position: absolute;
+    left: 15%;
+    margin-left: -100px;
+}
+
+.tagline-2 {
+    max-width: 375px;
+    padding-left: 8px;
+    font-size: 36px;
+    line-height: 140%;
+    background: #292929;
+    position: absolute;
+    top: 300px;
+    left: 50%;
+}
